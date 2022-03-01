@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #eff0f3; }
+  body .subcategoria {
+    text-align: center; }
+
+/* NAV */
+nav .nav-link {
+  color: #F2522E !important;
+  transition: color 0.5s; }
+
+nav .nav-link:hover {
+  color: #0d0d0d !important; }
+
+nav .logo-navbar {
+  position: relative;
+  width: 160px;
+  left: 15px; }
+
+/* FOOTER */
+footer .social-medias {
+  margin: 0 0 0 20px;
+  width: 25px;
+  height: 25px; }
+
+footer .footer-logo {
+  width: 42px;
+  height: 42px; }
+
+footer .footer-text {
+  color: #a7a9be !important;
+  text-align: center; }
+
+/* INDEX */
+.index-body {
+  background-color: #ffffff; }
+  .index-body .gif-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52%;
+    height: auto; }
+
+/* PRODUCTOS */
+.product-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .product-list .product-item {
+    margin: 2.5%;
+    transition: 0.3s all;
+    list-style: none; }
+    .product-list .product-item .box {
+      background-color: #fff;
+      border: #0d0d0d 1px solid;
+      width: 225px;
+      height: auto; }
+      .product-list .product-item .box .product-img {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        transition: 0.3s all; }
+      .product-list .product-item .box .product-img:hover {
+        opacity: .5; }
+      .product-list .product-item .box .product-name {
+        text-align: center;
+        text-decoration: none;
+        text-decoration-color: #0d0d0d; }
+      .product-list .product-item .box .product-name:link {
+        color: #000000 !important;
+        text-decoration: none; }
+      .product-list .product-item .box .product-name:visited {
+        color: #000000;
+        text-decoration: none; }
+      .product-list .product-item .box .product-price {
+        font-size: 13px;
+        text-align: center; }
+  .product-list .product-item:hover {
+    box-shadow: 1px 1px 15px black; }
+
+/* CONTACTO */
+.contactos-main .formulario {
+  margin: 0 auto;
+  margin-top: 1%;
+  padding: 1%;
+  text-align: center;
+  width: 100%;
+  max-width: 350px; }
+
+.contactos-main .tienda-iframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1%;
+  width: 100%;
+  max-width: 350px; }
