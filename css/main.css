@@ -67,8 +67,6 @@ footer .footer-text {
         height: auto;
         padding: 10px;
         transition: 0.3s all; }
-      .product-list .product-item .box .product-img:hover {
-        opacity: .5; }
       .product-list .product-item .box .product-name {
         text-align: center;
         text-decoration: none;
@@ -82,6 +80,8 @@ footer .footer-text {
       .product-list .product-item .box .product-price {
         font-size: 13px;
         text-align: center; }
+  .product-list .box:hover {
+    opacity: .5; }
   .product-list .product-item:hover {
     box-shadow: 1px 1px 15px black; }
 
@@ -92,7 +92,7 @@ footer .footer-text {
   padding: 1%;
   text-align: center;
   width: 100%;
-  max-width: 350px; }
+  max-width: 300px; }
 
 .contactos-main .tienda-iframe {
   display: flex;
@@ -102,4 +102,4 @@ footer .footer-text {
   text-align: center;
   padding: 1%;
   width: 100%;
-  max-width: 350px; }
+  max-width: 300px; }

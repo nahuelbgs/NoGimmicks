@@ -82,9 +82,6 @@ footer{
                 padding: 10px;
                 transition: 0.3s all;
             }
-            .product-img:hover{
-                opacity: .5;
-            }
             .product-name{
                 text-align: center;
                 text-decoration: none;
@@ -104,6 +101,9 @@ footer{
             }
         }    
     }
+    .box:hover{
+        opacity: .5;
+    }
     .product-item:hover{
         box-shadow: 1px 1px 15px black;
     } 
@@ -118,7 +118,7 @@ footer{
         padding: 1%;
         text-align: center;
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
     }
     .tienda-iframe{
         display: flex;
@@ -128,6 +128,6 @@ footer{
         text-align: center;
         padding: 1%;
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
     }
 }
