@@ -88,7 +88,7 @@ footer{
                 text-decoration-color: #0d0d0d;
             }
             .product-name:link{
-                color: #000000 !important;
+                color: #000000;
                 text-decoration: none;
             }
             .product-name:visited{
@@ -104,7 +104,7 @@ footer{
     .box:hover{
         opacity: .5;
     }
-    .product-item:hover{
+    .box:hover{
         box-shadow: 1px 1px 15px black;
     } 
 }

@@ -72,7 +72,7 @@ footer .footer-text {
         text-decoration: none;
         text-decoration-color: #0d0d0d; }
       .product-list .product-item .box .product-name:link {
-        color: #000000 !important;
+        color: #000000;
         text-decoration: none; }
       .product-list .product-item .box .product-name:visited {
         color: #000000;
@@ -82,7 +82,7 @@ footer .footer-text {
         text-align: center; }
   .product-list .box:hover {
     opacity: .5; }
-  .product-list .product-item:hover {
+  .product-list .box:hover {
     box-shadow: 1px 1px 15px black; }
 
 /* CONTACTO */
