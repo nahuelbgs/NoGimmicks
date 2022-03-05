@@ -1,53 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Oswald', sans-serif;
-  background-color: #eff0f3; }
-  body .subcategoria {
-    text-align: center; }
-
-/* NAV */
-nav .nav-link {
-  color: #F2522E !important;
-  transition: color 0.5s; }
-
-nav .nav-link:hover {
-  color: #0d0d0d !important; }
-
-nav .logo-navbar {
-  position: relative;
-  width: 160px;
-  left: 15px; }
-
-/* FOOTER */
-footer .social-medias {
-  margin: 0 0 0 20px;
-  width: 25px;
-  height: 25px; }
-
-footer .footer-logo {
-  width: 42px;
-  height: 42px; }
-
-footer .footer-text {
-  color: #a7a9be !important;
-  text-align: center; }
-
-/* INDEX */
-.index-body {
-  background-color: #ffffff; }
-  .index-body .gif-index {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 52%;
-    height: auto; }
-
-/* PRODUCTOS */
 .product-list {
   list-style: none;
   display: flex;
@@ -80,12 +31,44 @@ footer .footer-text {
       .product-list .product-item .box .product-price {
         font-size: 13px;
         text-align: center; }
-  .product-list .box:hover {
-    opacity: .5; }
-  .product-list .box:hover {
-    box-shadow: 1px 1px 15px black; }
+    .product-list .product-item:hover {
+      box-shadow: 1px 1px 15px black;
+      opacity: .5; }
 
-/* CONTACTO */
+nav .nav-link {
+  color: #F2522E !important;
+  transition: all 0.5s; }
+
+nav .logo-navbar {
+  position: relative;
+  width: 160px;
+  left: 15px; }
+
+.nav-link:hover {
+  color: #0d0d0d !important; }
+
+footer .social-medias {
+  margin: 0 0 0 20px;
+  width: 25px;
+  height: 25px; }
+
+footer .footer-logo {
+  width: 42px;
+  height: 42px; }
+
+footer .footer-text {
+  color: #a7a9be !important;
+  text-align: center; }
+
+.index-body {
+  background-color: #ffffff; }
+  .index-body .gif-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52%;
+    height: auto; }
+
 .contactos-main .formulario {
   margin: 0 auto;
   margin-top: 1%;
@@ -103,3 +86,25 @@ footer .footer-text {
   padding: 1%;
   width: 100%;
   max-width: 300px; }
+
+.newsletter {
+  align-items: center;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px; }
+  .newsletter .newsletter_button {
+    background-color: #0d0d0d;
+    color: #fff; }
+  .newsletter .newsletter_text {
+    font-weight: bold; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #eff0f3; }
+  body .subcategoria {
+    text-align: center; }
