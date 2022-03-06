@@ -31,21 +31,20 @@
       .product-list .product-item .box .product-price {
         font-size: 13px;
         text-align: center; }
-    .product-list .product-item:hover {
-      box-shadow: 1px 1px 15px black;
-      opacity: .5; }
+      .product-list .product-item .box:hover {
+        box-shadow: 1px 1px 15px black;
+        opacity: .5; }
 
 nav .nav-link {
   color: #F2522E !important;
   transition: all 0.5s; }
+  nav .nav-link:hover {
+    color: #0d0d0d !important; }
 
 nav .logo-navbar {
   position: relative;
   width: 160px;
   left: 15px; }
-
-.nav-link:hover {
-  color: #0d0d0d !important; }
 
 footer .social-medias {
   margin: 0 0 0 20px;
@@ -93,10 +92,15 @@ footer .footer-text {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px; }
   .newsletter .newsletter_button {
+    border: none;
+    padding: 10px;
     background-color: #0d0d0d;
-    color: #fff; }
+    color: #fafafa; }
   .newsletter .newsletter_text {
     font-weight: bold; }
+  .newsletter .newsletter_email {
+    border: none;
+    background-color: #fafafa; }
 
 * {
   margin: 0;

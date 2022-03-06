@@ -35,9 +35,10 @@
                 font-size: 13px;
                 text-align: center;
             }
-        }&:hover{
-            box-shadow: 1px 1px 15px black;
-            opacity: .5;
+            &:hover{
+                box-shadow: 1px 1px 15px black;
+                opacity: .5;
+            }
         }
     }
 }
