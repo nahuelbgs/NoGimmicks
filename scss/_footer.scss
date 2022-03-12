@@ -1,15 +1,14 @@
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;    
+}
 footer{
     .social-medias{
         margin: 0 0 0 20px;
-        width: 25px;
-        height: 25px;
-    }
-    .footer-logo{
-        width: 42px;
-        height: 42px;
+        @include sizes(25px, 25px)
     }
     .footer-text{
-        color: #a7a9be !important;
+        color: #a7a9be ;
         text-align: center;
     }
 }

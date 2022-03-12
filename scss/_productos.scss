@@ -5,18 +5,17 @@
     justify-content: space-around;
     .product-item{  
         margin: 2.5%;
-        transition: 0.3s all;
         list-style: none;
         .box{
             background-color: #fff;
             border: #0d0d0d 1px solid;
             width: 225px;
             height: auto;
+            transition: 0.3s all;
             .product-img{
                 width: 100%;
                 height: auto;
                 padding: 10px;
-                transition: 0.3s all;
             }
             .product-name{
                 text-align: center;
@@ -28,8 +27,7 @@
                 text-decoration: none;
             }
             .product-name:visited{
-                color: #000000;
-                text-decoration: none;
+                @extend .product-name:link
             }
             .product-price{
                 font-size: 13px;
