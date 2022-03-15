@@ -8,7 +8,7 @@
         list-style: none;
         .box{
             background-color: #fff;
-            border: #0d0d0d 1px solid;
+            border: $negro 1px solid;
             width: 225px;
             height: auto;
             transition: 0.3s all;
@@ -20,10 +20,10 @@
             .product-name{
                 text-align: center;
                 text-decoration: none;
-                text-decoration-color: #0d0d0d;
+                text-decoration-color: $negro;
             }
             .product-name:link{
-                color: #000000;
+                color: $negro;
                 text-decoration: none;
             }
             .product-name:visited{
@@ -34,7 +34,7 @@
                 text-align: center;
             }
             &:hover{
-                box-shadow: 1px 1px 15px black;
+                box-shadow: 1px 1px 15px $negro;
                 opacity: .5;
             }
         }

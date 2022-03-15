@@ -1,24 +1,3 @@
-$colors: (
- 1: green,
- 2:  black,
- 3: grey,
-);
-@each $name-color, $bgcolor in $colors {
-   .caja-#{$name-color} {
-    background-color: $bgcolor;
-   }
-}
-.caja-1{
-    color: map-get($map: $colors, $key: 3);
-}
-.caja-2{
-    color: map-get($map: $colors, $key: 1 );
-}
-.caja-3{
-    color: map-get($map: $colors, $key: 2 );
-}
-
-
 .newsletter{
     align-items: center;
     width: 100%;
@@ -28,7 +7,7 @@ $colors: (
         border: none;
         padding-top: 7px;
         padding-bottom: 7px;
-        background-color: #0d0d0d;
+        background-color: $negro;
         color: #fafafa;
     }
     .newsletter_text{

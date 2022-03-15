@@ -22,13 +22,13 @@
         text-decoration: none;
         text-decoration-color: #0d0d0d; }
       .product-list .product-item .box .product-name:link, .product-list .product-item .box .product-name:visited {
-        color: #000000;
+        color: #0d0d0d;
         text-decoration: none; }
       .product-list .product-item .box .product-price {
         font-size: 13px;
         text-align: center; }
       .product-list .product-item .box:hover {
-        box-shadow: 1px 1px 15px black;
+        box-shadow: 1px 1px 15px #0d0d0d;
         opacity: .5; }
 
 nav .nav-link {
@@ -77,24 +77,6 @@ footer .footer-text {
   padding: 1%;
   width: 100%;
   max-width: 300px; }
-
-.caja-1 {
-  background-color: green; }
-
-.caja-2 {
-  background-color: black; }
-
-.caja-3 {
-  background-color: grey; }
-
-.caja-1 {
-  color: grey; }
-
-.caja-2 {
-  color: green; }
-
-.caja-3 {
-  color: black; }
 
 .newsletter {
   align-items: center;
