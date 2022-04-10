@@ -6,37 +6,50 @@
 
 /*Calcula el precio total segun el tipo de producto y la cantidad ingresada*/
 
-switch (tipoDeProducto) {
-    case "hoodie":
-        resultado = precioHoodies * cantidad;
-        alert(resultado);
-        break;
-    case "remera":
-        resultado = precioRemeras * cantidad;
-        alert(resultado);
-        break;
-    default:
-        alert("No ingresaste un tipo de producto válido");
-}
+// switch (tipoDeProducto) {
+//     case "hoodie":
+//         resultado = precioHoodies * cantidad;
+//         alert(resultado);
+//         break;
+//     case "remera":
+//         resultado = precioRemeras * cantidad;
+//         alert(resultado);
+//         break;
+//     default:
+//         alert("No ingresaste un tipo de producto válido");
+// }
 
 /*Calcula las cuotas (sin interes) dado un precio del producto y la cantidad de cuotas*/
 
-function calcularCuotas(precioProducto, cantidadCuotas){
-    return(precioProducto / cantidadCuotas)
-}
+// function calcularCuotas(precioProducto, cantidadCuotas){
+//     return(precioProducto / cantidadCuotas)
+// }
 
+// ------------------------------------- DESAFIO INCORPORAR ARRAYS ----------------------------------------
 
-/* Dada una hora calcula las horas en las que tenés que tomar agua */
-
-// let hora = prompt("¿A que hora te despertas?")
-// let contador = 0
-
-function cuandoTomarAgua(hora){
-    while(contador < 12){
-        hora = hora + 1;
-        console.log(hora, "Toma agua");
-        contador = contador + 1;
+class Producto{
+    constructor (nombre, precio){
+        this.nombre = nombre;
+        this.precio = precio;
     }
-    return(console.log("Ya tomaste 2.5 litros!"));
 }
 
+let listaDeProductos = [];
+
+const agregarAlCarrito = () => {
+    let nombre = prompt("Nombre del producto");
+    let precio = parseInt(prompt("Precio del producto"));
+    let prod = new Producto(nombre,precio);
+    listaDeProductos.push(prod);
+}
+
+const eliminarDelCarrito = (prod) => {
+    let index = listaDeProductos.indexOf(prod);
+    if(index != -1) {
+        listaDeProductos.splice(index, 1)
+    }
+}
+
+const estaEnElCarrito = (prod) => {
+    listaDeProductos.includes(prod);
+}
