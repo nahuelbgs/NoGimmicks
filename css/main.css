@@ -24,12 +24,18 @@
       .product-list .product-item .box .product-name:link, .product-list .product-item .box .product-name:visited {
         color: #0d0d0d;
         text-decoration: none; }
-      .product-list .product-item .box .product-price {
+      .product-list .product-item .box .prod-price {
         font-size: 13px;
         text-align: center; }
       .product-list .product-item .box:hover {
         box-shadow: 1px 1px 15px #0d0d0d;
         opacity: .5; }
+      .product-list .product-item .box .btn_comprar {
+        border: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #0d0d0d;
+        color: #fafafa; }
 
 nav .nav-link {
   color: #F2522E !important;

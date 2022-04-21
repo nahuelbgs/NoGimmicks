@@ -1,10 +1,3 @@
-/*Calcula las cuotas (sin interes) dado un precio del producto y la cantidad de cuotas*/
-
-// function calcularCuotas(precioProducto, cantidadCuotas){
-//     return(precioProducto / cantidadCuotas)
-// }
-
-
 class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
@@ -14,12 +7,23 @@ class Producto {
 
 let listaDeProductos = [];
 
+const boton = document.getElementById("comprar");
+boton.addEventListener('click', e => {
+    agregarAlCarrito(e);
+})
+
+// boton.onclick = (e) => {agregarAlCarrito(e)}
+
+
 const agregarAlCarrito = () => {
-    let nombre = prompt("Nombre del producto");
-    let precio = parseInt(prompt("Precio del producto"));
+    let nombre = document.querySelector(".prod-name").textContent;
+    let precio = document.querySelector (".prod-price").textContent;
     let prod = new Producto(nombre, precio);
     listaDeProductos.push(prod);
+    console.log(listaDeProductos)
 }
+
+
 
 const sumarCarrito = () => {
     let precioTotal = 0;
@@ -32,20 +36,21 @@ const sumarCarrito = () => {
 const aplicarDescuento = (precioActual, descuento) => {
     descontar = precioActual * descuento / 100;
     precioNuevo = precioActual - descontar;
-    console.log(precioNuevo);
 }
 
-// NO FUNCIONA
 
-const eliminarDelCarrito = (producto) => {
-    let index = listaDeProductos.indexOf(producto);
+const eliminar = document.getElementById("eliminar");
+eliminar.addEventListener('click', e => {
+    eliminarDelCarrito(e);
+})
+
+const eliminarDelCarrito = () => {
+    let target = document.querySelector(".prod-name").textContent;
+    const index = listaDeProductos.findIndex(prod => prod.nombre === target);
     if (index != -1) {
         listaDeProductos.splice(index, 1)
     }
     console.log(listaDeProductos)
 }
 
-listaDeProductos.push (new Producto("tele", 2000));
-
-console.log(listaDeProductos.indexOf("tele"));
 

@@ -29,13 +29,20 @@
             .product-name:visited{
                 @extend .product-name:link
             }
-            .product-price{
+            .prod-price{
                 font-size: 13px;
                 text-align: center;
             }
             &:hover{
                 box-shadow: 1px 1px 15px $negro;
                 opacity: .5;
+            }
+            .btn_comprar{
+                    border: none;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    background-color: $negro;
+                    color: #fafafa;
             }
         }
     }
