@@ -42,6 +42,30 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pages/contacto.html">Contacto</a>
                         </li>
+                        <label for="btn-menu" class="icon-menu">
+                            <li class="nav-item">
+                                <img class="img-shop" src="img/shopix.png" alt="carrito">
+                            </li>
+                        </label>
+                        <input type="checkbox" id="btn-menu">
+                        <div class="containter-menu">
+                            <div class="cont-menu">
+                                <label for="btn-menu">✖️</label>
+                                <div class="mt-5 container">
+                                    <div class="shopping-cart-items productosDelCarritoContainer">
+                                    </div>
+                                    <div class="row">
+                                        <div class="d-flex justify-content-center col-6 p-5 mt-2 totalPrice">
+                                            <strong>TOTAL $</strong>
+                                        </div>
+                                        <div class="d-flex justify-content-center p-5 col-6">
+                                            <button class="btn btn-success comprarButton" type="button"
+                                                data-toggle="modal" data-target="#comprarModal">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -64,12 +88,12 @@
             <li class="product-item col-xl-3 col-xxl-3">
                 <div class="box">
                     <a href="#"><img class="product-img" src="img/hoodie_tigers.jpg" alt="Hoodie Tigers"></a>
-                    <a class="product-name" href="#">
-                        <p><strong>Hoodie Tigers</strong></p>
+                    <a class="product-link" href="#">
+                        <p class="product-name"><strong>Hoodie Tigers</strong></p>
                     </a>
-                    <p class="product-price">$8990</p>
+                    <p class="prod-price">$8990</p>
                     <div class="d-flex justify-content-center">
-                        <button  id="comprar"
+                        <button id="comprar"
                             class="btn_comprar col-5 col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 mb-1">COMPRAR</button>
                     </div>
                 </div>
@@ -77,12 +101,12 @@
             <li class="product-item col-xl-3 col-xxl-3">
                 <div class="box">
                     <a href="#"><img class="product-img" src="img/remera_falling.jpg" alt="Remera Falling"></a>
-                    <a class="product-name" href="#">
-                        <p><strong>Remera Falling</strong></p>
+                    <a class="product-link" href="#">
+                        <p class="product-name"><strong>Remera Falling</strong></p>
                     </a>
-                    <p class="product-price">$2990</p>
+                    <p class="prod-price">$2990</p>
                     <div class="d-flex justify-content-center">
-                        <button  id="comprar"
+                        <button id="comprar"
                             class="btn_comprar col-5 col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 mb-1">COMPRAR</button>
                     </div>
                 </div>
@@ -90,12 +114,12 @@
             <li class="product-item col-xl-3 col-xxl-3">
                 <div class="box">
                     <a href="#"><img class="product-img" src="img/hoodie_fire.jpg" alt="Hoodie Fire"></a>
-                    <a class="product-name" href="#">
-                        <p><strong>Hoodie Fire</strong></p>
+                    <a class="product-link" href="#">
+                        <p class="product-name"><strong>Hoodie Fire</strong></p>
                     </a>
-                    <p class="product-price">$8990</p>
+                    <p class="prod-price">$8990</p>
                     <div class="d-flex justify-content-center">
-                        <button  id="comprar"
+                        <button id="comprar"
                             class="btn_comprar col-5 col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5 mb-1">COMPRAR</button>
                     </div>
                 </div>
@@ -128,7 +152,9 @@
             </footer>
         </div>
     </footer>
-<script src="js/main.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

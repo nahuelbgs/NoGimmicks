@@ -1,14 +1,101 @@
-nav{
-    .nav-link{
+nav {
+    .nav-link {
         color: #F2522E !important;
         transition: all 0.5s;
-        &:hover{
+
+        &:hover {
             color: $negro !important;
         }
     }
-    .logo-navbar{
+
+    .logo-navbar {
         position: relative;
         width: 160px;
         left: 15px;
     }
+
+    .img-shop {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    #btn-menu:checked~.containter-menu {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #btn-menu:checked~.containter-menu .cont-menu {
+        transform: translateX(0%);
+    }
+
+    .containter-menu {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 99%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+
+        .cont-menu {
+            width: 100%;
+            max-width: 45%;
+            background-color: $fondo;
+            height: 100vh;
+            position: relative;
+            transition: all 500ms ease;
+            transform: translateX(0%);
+            float: right;
+
+        }
+        @media (max-width:768px) {
+            .cont-menu {
+                max-width: 100%;
+            }
+        }
+
+        .cont-menu nav {
+            transform: translateY(15%);
+        }
+
+        .cont-menu label {
+            position: absolute;
+            margin-left: 5px;
+            margin-top: 10px;
+            color: black;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    }
 }
+.shopping-cart-items {
+    padding: 20px 0px;
+  }
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    max-width: 80px;
+    border-radius: 20px;
+  }
+  
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  
+  .totalPrice {
+    min-height: 96px;
+  }

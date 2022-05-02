@@ -17,11 +17,11 @@
         width: 100%;
         height: auto;
         padding: 10px; }
-      .product-list .product-item .box .product-name {
+      .product-list .product-item .box .product-link {
         text-align: center;
         text-decoration: none;
         text-decoration-color: #0d0d0d; }
-      .product-list .product-item .box .product-name:link, .product-list .product-item .box .product-name:visited {
+      .product-list .product-item .box .product-link:link, .product-list .product-item .box .product-link:visited {
         color: #0d0d0d;
         text-decoration: none; }
       .product-list .product-item .box .prod-price {
@@ -47,6 +47,73 @@ nav .logo-navbar {
   position: relative;
   width: 160px;
   left: 15px; }
+
+nav .img-shop {
+  width: 24px;
+  height: 24px;
+  cursor: pointer; }
+
+nav #btn-menu {
+  display: none; }
+
+nav #btn-menu:checked ~ .containter-menu {
+  opacity: 1;
+  visibility: visible; }
+
+nav #btn-menu:checked ~ .containter-menu .cont-menu {
+  transform: translateX(0%); }
+
+nav .containter-menu {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 99%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden; }
+  nav .containter-menu .cont-menu {
+    width: 100%;
+    max-width: 45%;
+    background-color: #eff0f3;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(0%);
+    float: right; }
+  @media (max-width: 768px) {
+    nav .containter-menu .cont-menu {
+      max-width: 100%; } }
+  nav .containter-menu .cont-menu nav {
+    transform: translateY(15%); }
+  nav .containter-menu .cont-menu label {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 18px; }
+
+.shopping-cart-items {
+  padding: 20px 0px; }
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc; }
+
+.shopping-cart-image {
+  max-width: 80px;
+  border-radius: 20px; }
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px; }
+
+.totalPrice {
+  min-height: 96px; }
 
 footer .social-medias {
   margin: 0 0 0 20px;

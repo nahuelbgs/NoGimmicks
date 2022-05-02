@@ -17,17 +17,17 @@
                 height: auto;
                 padding: 10px;
             }
-            .product-name{
+            .product-link{
                 text-align: center;
                 text-decoration: none;
                 text-decoration-color: $negro;
             }
-            .product-name:link{
+            .product-link:link{
                 color: $negro;
                 text-decoration: none;
             }
-            .product-name:visited{
-                @extend .product-name:link
+            .product-link:visited{
+                @extend .product-link:link
             }
             .prod-price{
                 font-size: 13px;
