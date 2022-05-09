@@ -39,6 +39,7 @@ function agregarAlCarritoClicked(event) {
     const prod = new Producto(prodName, prodPrice, prodImg);
     listaDeProductos.push(prod);
     guardarLocal(prod.nombre, JSON.stringify(prod));
+    swal("¡Producto agregado al carrito con éxito!", `${prodName}`, "success");
     agregarProdAlCarritoVisible(listaDeProductos);
     actualizarCarrito();
 }
@@ -137,5 +138,6 @@ function eliminarDelCarrito(event) {
         listaDeProductos.splice(index, 1)
         actualizarCarrito()
         eliminarLocal(prodName, buscarEnLocalStorage());
+        swal("¡Producto eliminado del carrito!", `${prodName}`, "error");
     };
 }
